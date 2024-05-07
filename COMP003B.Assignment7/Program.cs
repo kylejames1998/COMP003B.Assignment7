@@ -1,3 +1,5 @@
+using COMP003B.Assignment7.Data;
+
 namespace COMP003B.Assignment7
 {
     public class Program
