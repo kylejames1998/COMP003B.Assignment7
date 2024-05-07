@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace COMP003B.Assignment7.Models
 {
     public class AlbumArtist
-    {   
+    {
+        [Key]
         public string ArtistName { get; set; }
 
         public string AlbumId { get; set; }
