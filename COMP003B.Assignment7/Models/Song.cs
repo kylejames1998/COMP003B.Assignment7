@@ -10,5 +10,8 @@ namespace COMP003B.Assignment7.Models
         public string Artist { get; set; }
 
         public string AlbumId { get; set;}
+
+        // Collection navigation property
+        public virtual ICollection<AlbumArtist>? AlbumArtists { get; set; }
     }
 }
