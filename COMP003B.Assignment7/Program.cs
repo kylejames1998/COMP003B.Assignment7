@@ -1,4 +1,5 @@
 using COMP003B.Assignment7.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace COMP003B.Assignment7
 {
@@ -10,6 +11,10 @@ namespace COMP003B.Assignment7
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Set up the database context.
+            builder.Services.AddDbContext<Assignment7Context>(options =>
+                options.UseSqlServer("Name=ConnectionStrings:DefaultConnection"));
 
             var app = builder.Build();
 

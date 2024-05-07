@@ -1,7 +1,7 @@
 ﻿using COMP003B.Assignment7.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace COMP003B.LectureActivity7.Data
+namespace COMP003B.Assignment7.Data
 {
     public class Assignment7Context : DbContext
     {
